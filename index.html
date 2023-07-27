@@ -31,14 +31,37 @@
         .font-lato {
             font-family: 'Lato', sans-serif;
         }
+        .team-section{
+          background: linear-gradient(0deg, rgba(0, 0, 0, 0.86), rgba(0, 0, 0, 0.46)), url(/images/team.png);
+          background-size: cover;
+        }
+        .member i{
+          margin: 0 5px;
+        }
+        #slide1{
+          background: linear-gradient(180deg, #121212 0%, rgba(18, 18, 18, 0.00) 100%), url(/images/banner1.png);
+          background-size: cover;
+        }
+        #slide2{
+          background: linear-gradient(180deg, #121212 0%, rgba(18, 18, 18, 0.00) 100%), url(/images/banner2.png);
+          background-size: cover;
+        }
+        #slide3{
+          background: linear-gradient(180deg, #121212 0%, rgba(18, 18, 18, 0.00) 100%), url(/images/banner3.png);
+          background-size: cover;
+        }
+        #slide4{
+          background: linear-gradient(180deg, #121212 0%, rgba(18, 18, 18, 0.00) 100%), url(/images/banner4.png);
+          background-size: contain;
+        }
     </style>
 </head>
 
 <body class="font-lato">
     <header class="container mx-auto">
         <!-- nav section -->
-        <nav>
-            <div class="navbar bg-base-100">
+        <nav class="container mt-10">
+            <div class="navbar bg-rose-500 text-white rounded-[600px] px-6 py-4 my-10">
                 <div class="navbar-start">
                     <div class="dropdown">
                         <label tabindex="0" class="btn btn-ghost lg:hidden">
@@ -75,12 +98,12 @@
         <div class="carousel w-full ">
             
             <!-- Slide 1 -->
-            <div id="slide1" class="carousel-item relative w-full  bg-gradient-to-r from-[#121212] to-[#12121200]  ">
-              <img class="opacity-50" src="/images/banner1.png" class="w-full" />
+            <div id="slide1" class="carousel-item relative w-full ">
+              <!-- <img src="/images/banner1.png" class="w-full   " /> -->
               <div class="absolute inset-x-[15%] top-5 hidden py-5 text-center text-white md:block">
                 <h1 class="text-7xl font-extrabold mt-68 mb-6">Exotic Tastes at Your <br> Doorsteps</h1>
                 <p class="text-xl font-medium">
-                We supply high qauality organic fruits. 
+                We supply high quality organic fruits. 
                 </p>
                 <button class=" text-2xl font-bold px-7 py-4 rounded-lg mt-8 bg-rose-500">Shop All</button>
               </div>
@@ -90,8 +113,8 @@
               </div>
             </div> 
             <!-- Slide 2 -->
-            <div id="slide2" class="carousel-item relative w-full  bg-gradient-to-r from-[#121212] to-[#12121200]">
-              <img src="/images/banner2.png" class="w-full" />
+            <div id="slide2" class="carousel-item relative w-full">
+              <!-- <img src="/images/banner2.png" class="w-full bg-gradient-to-r from-[#121212] to-[#12121200]  " /> -->
               <div class="absolute inset-x-[15%] top-5 hidden py-5 text-center text-white md:block">
                 <h1 class="text-7xl font-extrabold mt-68 mb-6">Exotic Tastes at Your <br> Doorsteps</h1>
                 <p class="text-xl font-medium">
@@ -106,11 +129,11 @@
             </div>
              <!--Slide 3  -->
             <div id="slide3" class="carousel-item relative w-full">
-              <img src="/images/banner3.png" class="w-full" />
+              <!-- <img src="/images/banner3.png" class="w-full" /> -->
               <div class="absolute inset-x-[15%] top-5 hidden py-5 text-center text-white md:block">
-                <h1 class="text-7xl font-extrabold mt-68 mb-6">Exotic Tastes at Your <br> Dooresteps</h1>
+                <h1 class="text-7xl font-extrabold mt-68 mb-6">Exotic Tastes at Your <br> Doorsteps</h1>
                 <p class="text-xl font-medium">
-                We supply high qauality organic fruits. 
+                We supply high quality organic fruits. 
                 </p>
                 <button class=" text-2xl font-bold px-7 py-4 rounded-lg mt-8 bg-rose-500">Shop All</button>
               </div>
@@ -123,7 +146,7 @@
             <div id="slide4" class="carousel-item relative w-full">
               <img src="/images/banner4.png" class="w-full" />
               <div class="absolute inset-x-[15%] top-5 hidden py-5 text-center text-white md:block">
-                <h1 class="text-7xl font-extrabold mt-68 mb-6">Exotic Tastes at Your <br> Dooresteps</h1>
+                <h1 class="text-7xl font-extrabold mt-68 mb-6">Exotic Tastes at Your <br> Doorsteps</h1>
                 <p class="text-xl font-medium">
                 We supply high qauality organic fruits. 
                 </p>
@@ -359,12 +382,90 @@
           </div>
           
           </div>
-          <button class="text-white text-2xl font-bold px-7 py-4 rounded-lg mt-8 bg-rose-500">Shop All</button>
-            
+          <button class="text-white text-2xl font-bold px-7 py-4 rounded-lg mt-8 bg-rose-500">Shop All</button> 
         </section>
-    </main>
-    <footer>
 
+        <!-- Team Section -->
+        <section class="team-section text-white lg:py-32 my-32">
+          <div class="team-title text-center mb-10">
+            <h2 class="text-white text-5xl font-extrabold mb-6">Meet the team section</h2>
+                <p class="text-base font-medium">Contrary to popular belief, is not simply random text. It has roots in a piece of classical
+                <br>    
+                Latin literature from 45 BC, making it over 2000 years old.</p>
+          </div>
+          <div class="team-members flex justify-around gap-10">
+            <div class="member text-center">
+              <img src="images/member1.png" alt="">
+              <h3 class="mb-4 mt-6 font-bold text-2xl">Awlad hossain</h3>
+              <small class="mb-4 font-medium text-base">Fruits Expert</small>
+              <br>
+              <i class="fa-brands fa-facebook" style="color: #f85559;"></i>
+              <i class="fa-brands fa-twitter" style="color: #f85559;"></i>
+              <i class="fa-brands fa-linkedin" style="color: #f85559;"></i>
+            </div>
+            <div class="member text-center">
+              <img src="images/member2.png" alt="">
+              <h3 class="mb-2 mt-6 font-bold text-2xl">Safia Chowdhury</h3>
+              <small class="mb-2 font-medium text-base">Fruits Expert</small>
+              <br>
+              <i class="fa-brands fa-facebook" style="color: #f85559;"></i>
+              <i class="fa-brands fa-twitter" style="color: #f85559;"></i>
+              <i class="fa-brands fa-linkedin" style="color: #f85559;"></i>
+            </div>
+            <div class="member text-center">
+              <img src="images/member3.png" alt="">
+              <h3 class="mb-2 mt-6 font-bold text-2xl">Rakib hossain</h3>
+              <small class="mb-2 font-medium text-base">Fruits Expert</small>
+              <br>
+              <i class="fa-brands fa-facebook" style="color: #f85559;"></i>
+              <i class="fa-brands fa-twitter" style="color: #f85559;"></i>
+              <i class="fa-brands fa-linkedin" style="color: #f85559;"></i>
+            </div>
+            <div class="member text-center">
+              <img src="images/member4.png" alt="">
+              <h3 class="mb-2 mt-6 font-bold text-2xl">Chaity</h3>
+              <small class="mb-4 font-medium text-base">Fruits Expert</small>
+              <br>
+              <i class="fa-brands fa-facebook" style="color: #f85559;"></i>
+              <i class="fa-brands fa-twitter" style="color: #f85559;"></i>
+              <i class="fa-brands fa-linkedin" style="color: #f85559;"></i>
+            </div>
+            
+          </div>
+        </section>
+          </main>
+    <footer class="bg-[#121212] justify-center text-center py-32 text-white">
+      <div class="footer-title flex justify-center mx-auto">
+        <img class="w-auto" src="images/logo.png" alt="">
+        <p class="p-5 text-white">Fruit Burst</p>
+      </div>
+
+      <!-- Footer-nav -->
+      
+        
+        <div class="justify-center navbar-center lg:flex">
+          <ul class="menu menu-horizontal px-1 text-white">
+            <li><a>Home</a></li>
+            <li><a>About us</a></li>
+            <li><a>Shop</a></li>
+            <li><a>All Fruits</a></li>
+            <li><a>Support</a></li>
+            <li><a>My Account</a></li>
+
+          </ul>
+        </div>
+        
+      
+      <!-- footer icons -->
+      <div class="footer-icons">
+        <i class="fa-brands fa-facebook-f m-5 text-2xl font-bold"></i>
+        <i class="fa-brands fa-twitter m-5 text-2xl font-bold"></i>
+        <i class="fa-brands fa-linkedin m-5 text-2xl font-bold"></i>
+        <i class="fa-brands fa-youtube m-5 text-2xl font-bold"></i>
+        <i class="fa-brands fa-instagram m-5 text-2xl font-bold"></i>
+        <i class="fa-brands fa-apple m-5 text-2xl font-bold"></i>
+      </div>
+      
     </footer>
 </body>
 
